@@ -1,21 +1,15 @@
-const itensMenu = document.querySelectorAll('.menu a');
+const tabMenu = document.querySelectorAll('.js-tabmenu li');
+const tabContent = document.querySelectorAll('.js-tabcontent section');
 
-itensMenu.forEach((item) => {
-    item.classList.add('ativo');
-})
+function activeTab(index) {
+    tabContent.forEach((section) => {
+        section.classList.remove('ativo');
+    });
+    tabContent[index].classList.add('ativo');
+}
 
-itensMenu.forEach((item) => {
-    item.classList.remove('ativo');
-})
-itensMenu[0].classList.add('ativo');
-
-const imgs = document.querySelectorAll('img');
-
-imgs.forEach((img) => {
-    const possuiAtributo = img.hasAttribute('alt');
-    console.log(img, possuiAtributo);
-})
-
-const link = document.querySelector('a[href^="http"]');
-link.setAttribute('href', 'https://www.google.com/');
-console.log(link);
+tabMenu.forEach((itemMenu, index) => {
+    itemMenu.addEventListener('click', () => {
+        activeTab(index);
+    })
+});
