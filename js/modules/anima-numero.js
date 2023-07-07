@@ -17,3 +17,12 @@ numeros.forEach((numero) => {
         }
     }, 25 * Math.random());
 });
+
+function handleMutation() {
+
+}
+
+const observerTarget = document.querySelector('.numeros');
+const observer = new MutationObserver(handleMutation);
+
+observer.observe(observerTarget, {attributes});
