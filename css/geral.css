@@ -306,3 +306,11 @@ body, h1, h2, ul, li, p, dd, dt, dl {
 [data-semana].aberto::after {
   background: #3F4;
 }
+
+
+.btc-preco {
+  background: #3F4;
+  padding: .2rem .5rem;
+  font-weight: bold;
+  border-radius: 2px;
+}
