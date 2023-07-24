@@ -3,11 +3,11 @@ export default function initAccordion() {
     const ativoClass = 'ativo';
 
     function activeAccordion() {
-		this.classList.toggle(ativoClass);
-		this.nextElementSibling.classList.toggle(ativoClass);
-	}
+        this.classList.toggle(ativoClass);
+        this.nextElementSibling.classList.toggle(ativoClass);
+    }
 
-	if (accordionList.length) {
+    if (accordionList.length) {
         accordionList[0].classList.add(ativoClass);
         accordionList[0].nextElementSibling.classList.add(ativoClass);
 

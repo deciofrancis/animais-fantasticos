@@ -9,6 +9,9 @@
         "sourceType": "module"
     },
     "rules": {
-        "indent": [4, "tab"]
+        "indent": ["error", 4],
+        "no-param-reassign": 0,
+        "import/extensions": 0,
+        "no-console": 0
     }
 }
