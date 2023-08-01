@@ -1,5 +1,5 @@
 export default class AnimaNumeros {
-    constructor(numeros, observerClass, observerTarget) {
+    constructor(numeros, observerTarget, observerClass) {
         this.numeros = document.querySelectorAll(numeros);
         this.observerTarget = document.querySelector(observerTarget);
         this.observerClass = observerClass;
@@ -27,7 +27,7 @@ export default class AnimaNumeros {
     // ativa incrementar numero para cada
     // numero selecionado do dom
     animaNumeros() {
-        this.numeros.forEach(numero => this.constructor.incrementarNumero(numero));
+        this.numeros.forEach((numero) => this.constructor.incrementarNumero(numero));
     }
 
     // funcao que ocorre quando a mutacoes ocorrer
