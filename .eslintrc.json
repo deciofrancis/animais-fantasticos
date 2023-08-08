@@ -13,5 +13,21 @@
         "no-param-reassign": 0,
         "import/extensions": 0,
         "no-console": 0
-    }
+    },
+    "type": "array",
+    "items": [
+        {
+        "type": "number",
+        "minimum": 1
+        },
+        {
+        "type": "string",
+        "enum": [
+            "exclude-class-expressions"
+        ]
+        }
+    ],
+    "additionalItems": false,
+    "minLength": 1,
+    "maxLength": 2
 }
