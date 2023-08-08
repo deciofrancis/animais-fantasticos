@@ -40,8 +40,7 @@ funcionamento.init();
 
 const slide = new SlideNav('.slide', '.slide-wrapper');
 slide.init();
-slide.changeSlide(3);
-slide.activePrevSlide();
+slide.addArrow('.prev', '.next');
 
 fetchAnimais('./animaisapi.json', '.numeros-grid');
 
