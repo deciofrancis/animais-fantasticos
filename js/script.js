@@ -42,6 +42,8 @@ const slide = new SlideNav('.slide', '.slide-wrapper');
 slide.init();
 slide.addArrow('.prev', '.next');
 
+slide.creatControl();
+
 fetchAnimais('./animaisapi.json', '.numeros-grid');
 
 fetchBitcoin('https://blockchain.info/ticker', '.btc-preco');
