@@ -144,6 +144,12 @@ export class Slide {
     }
 }
 export class SlideNav extends Slide {
+
+    constructor(slide, wrapper) {
+        super(slide, wrapper);
+        this.bindControlEvents;
+    }
+
     addArrow(prev, next) {
         this.prevElement = document.querySelector(prev);
         this.nextElement = document.querySelector(next);
@@ -162,5 +168,24 @@ export class SlideNav extends Slide {
             control.innerHTML += `<li><a href="#slide${index}">${index + 1}</a></li>`;
         });
         this.wrapper.appendChild(control);
+        return control;
     }
+
+    eventControl(item, index) {
+        item.addEventListener('click', (event) => {
+           event.preventDefault();
+           this.changeSlide(index);
+        });
+    }
+
+    addControl(customControl) {
+        this.control = document.querySelector(customControl) || this.creatControl();
+        this.controlArray = [...this.control.children];
+        this.controlArray.forEach(this.eventControl);
+    }
+
+    bindControlEvents() {
+        this.eventControl = this.eventControl.bind(this);
+    }
+
 }
