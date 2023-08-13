@@ -42,7 +42,7 @@ const slide = new SlideNav('.slide', '.slide-wrapper');
 slide.init();
 slide.addArrow('.prev', '.next');
 
-slide.creatControl();
+slide.addControl('.custom-controls');
 
 fetchAnimais('./animaisapi.json', '.numeros-grid');
 
