@@ -149,7 +149,7 @@ export class SlideNav extends Slide {
 
     constructor(slide, wrapper) {
         super(slide, wrapper);
-        this.bindControlEvents;
+        this.bindControlEvents();
     }
 
     addArrow(prev, next) {
@@ -197,6 +197,6 @@ export class SlideNav extends Slide {
 
     bindControlEvents() {
         this.eventControl = this.eventControl.bind(this);
-        this.activeControlItem = this.activeControlItem.binf(this);
+        this.activeControlItem = this.activeControlItem.bind(this);
     }
 }
