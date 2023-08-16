@@ -90,3 +90,7 @@
     height: 40px;
     background: #FB5 url('../img//img-slide/arrow.svg') center center no-repeat;
 }
+
+.arrow-nav button.prev {
+    transform: rotate(-180deg);
+}
