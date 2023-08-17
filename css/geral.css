@@ -289,7 +289,7 @@ body, h1, h2, ul, li, p, dd, dt, dl {
   
   .js [data-anime="scroll"].ativo {
     opacity: 1;
-    transition: .3s;
+    transform: translate3d(0, 0, 0);
   }
 
 [data-semana]::after {
