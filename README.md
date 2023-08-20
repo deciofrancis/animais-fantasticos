@@ -7,7 +7,7 @@ Site desenvolvido no curso JavaScript Completo ES6 na Origamid.
 ![desktop](https://github.com/deciofrancis/animais-fantasticos/blob/main/img/screenshot-desktop.gif)
 
 #
-:iphone: Mobile
+<p align="center">:iphone: Mobile</p>
 
 <p align="center"><img src="https://github.com/deciofrancis/animais-fantasticos/blob/main/img/screenshot-mobile.gif"/></p><br>
 
