@@ -9,7 +9,7 @@ Site desenvolvido no curso JavaScript Completo ES6 na Origamid.
 #
 :iphone: Mobile
 
-<div align="center">![mobile](https://github.com/deciofrancis/animais-fantasticos/blob/main/img/screenshot-mobile.gif)</div>
+<p align="center"><img src="https://github.com/deciofrancis/animais-fantasticos/blob/main/img/screenshot-mobile.gif"/></p><br>
 
 [Clique para visitar o projeto](https://deciofrancis.github.io/animais-fantasticos/)
 ## :computer: Tecnologias
