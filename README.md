@@ -36,7 +36,7 @@ Instale as dependências:
   # com yarn
   $ yarn install
 ```
-Inicie o projeto com o comando:animais
+Inicie o projeto com o comando:
 ```bash
   # com npm
   $ npm run dev
